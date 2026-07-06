@@ -24,7 +24,7 @@ st.markdown("""
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load('car_price_prediction.pkl')
+        model = joblib.load('Car_price_prediction.pkl')
         return model
     except FileNotFoundError:
         return None
